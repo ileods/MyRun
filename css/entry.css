@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('/img/entry.jpg') no-repeat;
+  background-size: 100%;
+  background-color: #50b3d0;
+  font-family: 'Roboto', sans-serif;
+}
+.dws-wrapper {
+  margin-top: 1%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.dws-form {
+  background: #ffffff;
+  padding: 10px;
+  border: 5px;
+  width: 330px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dws-form a {
+  text-decoration: none;
+  transition: 0.5s;
+  color: hsl(199, 98%, 60%);
+}
+.dws-form a:hover {
+  color: #36d2ff;
+}
+.dws-form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dws-form input {
+  display: block;
+  width: 100%;
+}
+
+.tab-form {
+  background: #fff;
+  display: block;
+  border-radius: 5px;
+  padding: 30px 20px 20px;
+}
+
+
+label.tab {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin-left: 19%;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 15px;
+  display: inline-block;
+  border-radius: 3px 3px 0 0;
+  margin-bottom: -1px;
+}
+
+
+::-webkit-input-placeholder {
+  color: #c4c9c9;
+} /* webkit */
+::-moz-placeholder {
+  color: #298cad;
+} /* Firefox 19+ */
+:-moz-placeholder {
+  color: #298cad;
+} /* Firefox 18- */
+:-ms-input-placeholder {
+  color: #298cad;
+} /* IE */
+
+.input {
+  font-size: 16px;
+  border: 2px solid #e9eaea;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  margin-bottom: 22px;
+  color:black;
+  outline: none;
+}
+
+.button {
+  background: linear-gradient(#0fbef3, #16c4e3) #16a2e3;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 18px;
+  display: block;
+  cursor:pointer;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 46px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-width: 5px 0;
+  border-style: solid none;
+  border-color: hsl(199, 98%, 60%) #000 hsl(189, 95%, 43%);
+  border-radius: 6px;
+}
+.button:hover {
+  background: linear-gradient(#00bcf5, #009bf5) #00a7f5;
+}
+.button:active {
+  background: linear-gradient(#00d8f5, #009bf5) #00c4f5;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.social li a {
+  width: 40px;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+}
+.social li a::before,
+.social li a::after {
+  content: "";
+  position: absolute;
+  background: #2fbae1;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  transition: transform 0.5s;
+  transform: scaleY(0);
+}
+.social li a div::before,
+.social li a div::after {
+  content: "";
+  position: absolute;
+  background: #2fbae1;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  transition: transform 0.5s;
+  transform: scaleY(0);
+}
+.social li a div::before {
+  left: 0;
+  transform-origin: bottom;
+}
+.social li a div::after {
+  right: 0;
+  transform-origin: top;
+}
+
+.social li a:hover::before {
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.social li a::before {
+  transform-origin: right;
+}
+.social li a:hover::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.social li a::after {
+  transform-origin: left;
+}
+.social li a:hover div::before {
+  transform: scaleY(1);
+  transform-origin: top;
+}
+.social li a:hover div::after {
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+
+.social + a {
+  margin-top: 10px;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+}
+
+.box-input {
+outline: none;
+  position: relative;
+}
+.box-input input {
+outline: none;
+  border: none;
+  border-bottom: 2px solid #e9eaea;
+  padding: 10px 0;
+}
+
+.box-input label {
+outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  color: #c4c9c9;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.box-input input:focus ~ label,
+.box-input input:valid ~ label {
+  outline: none;
+  top: -20px;
+  font-size: 12px;
+  color: #33d3fe;
+}
+
+#tab-1::before {
+  content: "\f2c0";
+  font-family: "fontawesome", sans-serif;
+  font-size: 24px;
+  margin-right: 7px;
+  font-weight: normal;
+}
+
+.not-entry{
+  position:flex;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 13%;
+}

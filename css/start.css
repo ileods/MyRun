@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+body{
+  /* background: url(start.jpg) no-repeat; */
+  background-size: 100%;
+  background-color: #50b3d0;
+}
+
+.circle {
+
+  background-color: white;
+  border-radius: 200px;
+  width: 400px;
+  height: 400px;
+  float: center;
+  display: absolute;
+  margin: auto;
+  margin-top: 7%;
+}
+
+img{
+  width: 30%;
+  height: 30%;
+  padding: 5% 0 0 33%;
+}
+
+h1 {
+  color:#04b1e6;
+    font-size: 50pt;
+    padding: 0 0 0 13%;
+    margin: auto;
+    font-weight: bold;
+    font-family: "Noto Sans JP", sans-serif;
+    letter-spacing:0.3em;}
+
+a.entry {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    margin-left: 25%;
+    color:white;
+
+    text-decoration: none;
+    padding: .4em 3.5em;
+    outline: none;
+    border-width: 5px 0;
+    border-style: solid none;
+    border-color: hsl(199, 98%, 60%) #000 hsl(189, 95%, 43%);
+    border-radius: 6px;
+    background: linear-gradient(#0fbef3, #16c4e3) #16a2e3;
+    transition: 0.2s;
+  }
+  a.entry:hover { background: linear-gradient(#00bcf5, #009bf5) #00a7f5; }
+  a.entry:active { background: linear-gradient(#00d8f5, #009bf5) #00c4f5; }
+
+  a.check-in {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    color:white;
+    margin-top: 1%;
+    margin-left: 25%;
+    text-decoration: none;
+    padding: .4em 2em;
+    outline: none;
+    border-width: 5px 0;
+    border-style: solid none;
+    border-color: hsl(199, 98%, 60%) #000 hsl(189, 95%, 43%);
+    border-radius: 6px;
+    background: linear-gradient(#0fbef3, #16c4e3) #16a2e3;
+    transition: 0.2s;
+  }
+  a.check-in:hover { background: linear-gradient(#00bcf5, #009bf5) #00a7f5; }
+  a.check-in:active { background: linear-gradient(#00d8f5, #009bf5) #00c4f5; }
+
+
+  @media screen and (max-width: 1150px){
+    a.check-in {
+      font-size: 16px;
+      padding: .3em 2em;
+      margin-left: 30%;
+      font-family: "Noto Sans JP", sans-serif;
+    }
+    a.entry{
+      font-size: 16px;
+      padding: .3em 3.5em;
+      margin-left: 30%;
+      font-family: "Noto Sans JP", sans-serif;
+    }
+  }

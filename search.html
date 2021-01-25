@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/search.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск</title>
+</head>
+<body>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <ul class="navbar">
+        <li><a href="mypage.html"><i class="fa fa-fw fa-user-circle"></i> Профиль</a></li>
+        <li><a href="news.html"><i class="fa fa-fw fa-comment"></i> Новости</a></li>
+        <li><a href="friends.html" ><i class="fa fa-fw fa-users"></i> Подписки</a></li>
+        <li><a class="active"><i class="fa fa-search"></i> Поиск</a></li>
+            <li><a><i class="fa fa-fw fa-cog" aria-hidden="true"></i> Настройки</a>
+        <ul>
+            <li><a href="edit.html">Изменить профиль</a></li>
+            <li><a href="password_change_form.html">Изменить пароль</a></li>
+        </ul> </li>
+    <li><a href="logged_out.html"><i class="fa fa-fw fa-sign-out"></i> Выход</a></li>
+    </ul>
+    <table class="nameing">
+        <tr>
+        <th>
+          <img src="img/runner.png" class="logo-login" alt="logo">
+        </th>
+        <td ><div class='name'>Имя<div class='login'>@Логин</div></div></td>
+        </tr>
+      </table>
+    <form>
+        <input  type="text" placeholder="Поиск по имени...">
+        <button class="submit" type="submit"></button>
+    </form>
+
+    <div id="app" class="app">
+        <div class="status">
+            <div class="tweet-content">
+                <img src="img/runner.png" class="logo" alt="logo">
+                <div class="tweet">
+                    <a href="#">Имя</a>
+                    <span>@id</span>
+                    <p class="description">
+                            Описание профиля
+                            <p>Город, Страна</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+body {
+  background-color: rgb(255, 255, 255);
+  background: url('/img/mypage.jpg') no-repeat;
+  background-size: 100%;
+}
+
+.navbar ul {
+  display: none;
+  position: absolute;
+  top: 185%;
+  border-radius: 6px;
+}
+
+.navbar ul li a:hover {
+  border: 3px solid rgba(64, 194, 245, 0.795);
+  color: rgba(0, 183, 255, 0.795);
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar ul li a{
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 6px;
+  background-color:  rgb(64, 194, 245);
+  border: 3px solid rgba(255, 255, 255, 0.459);
+  font-size: 16px;
+}
+
+.navbar li:hover ul { display: block;  }
+.navbar, .navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar a {
+  float: left;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  padding: 16px;
+  display: block;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Ссылки навбар при наведении мыши */
+.navbar a:hover {
+  background-color: rgba(233, 233, 233, 0.37);
+  border-width: 5px 0;
+  border-radius: 6px;
+}
+
+.navbar {
+  height: 30px;
+  padding-left: 25px;
+  min-width: 470px;
+  width: 63%;
+  background-color: rgba(85, 85, 85, 0);
+  float: right;
+  margin-right: 9%;
+}
+.navbar li {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+.navbar ul li { float: none; }
+
+.navbar ul li:hover { background-color: #666;  }
+
+/* Текущая / активная навигационная ссылка */
+.active {
+  background-color: #73cffa;
+  border-width: 5px 0;
+  border-radius: 6px;
+}
+
+
+.name {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 4.5%;
+    margin-left: -5%;
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+}
+
+.description {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  color: white;
+  float: left; /* Обтекание справа */
+  width: 55%;
+  margin-top: 4%;
+  margin-left: 8%;
+}
+.login {
+  font-weight: lighter;
+  color: rgba(131, 125, 125, 0.699);
+}
+
+.open-ram {
+  margin-left: -20%;
+  position: fixed;
+  height: 100px;
+  margin-top: 12%;
+}
+
+.open-ram-click:hover::after{
+  content:"Добавить новый твит";
+  position: absolute;
+  background:hsla(199, 98%, 60%, 0.582);
+  height: 25px;
+  width: 200px;
+  border-radius: 7px;
+  margin-left: -23.5%;
+  margin-top: 19%;
+  text-align: center;
+  letter-spacing:0.5px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: white;
+  font-size: 14px;
+}
+
+.nameing {
+  float: left; /* Обтекание справа */
+  width: 25%;
+}
+
+.close {
+  float: left;
+  position: relative;
+  font-size: 24px;
+  text-decoration: none;
+  margin-left: 1%;
+  border-radius: 40px;
+  z-index: 1;
+  cursor: pointer;
+}
+.close:before {
+  content: "+";
+  padding: 8px;
+  color: hsl(199, 98%, 60%);
+  position: absolute;
+  z-index: 2;
+  transform: rotate(45deg);
+  font-size: 50px;
+  line-height: 1;
+  top: -13px;
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+.close:hover:after {
+  transform: scale(1);
+}
+.close:hover:before {
+  transform: scale(0.8) rotate(45deg);
+  color: #16a2e3;
+}
+
+.ram {
+  margin-left: 24.5%;
+  margin-top: 12%;
+  background-color: rgba(232, 244, 247, 0.705);
+  width: 50%;
+  height: 40%;
+  border: 5px solid rgba(12, 172, 247, 0.089);
+  border-radius: 10px;
+  display: none;
+}
+
+.ram.visible {
+  display: block;
+}
+
+#sumbit {
+  font-family: "Noto Sans JP", sans-serif;
+  cursor: pointer;
+  margin-left: 40%;
+  margin-top: 0.5%;
+  font-size: 20px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 0.2em 1em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: hsl(199, 98%, 60%) #000 hsl(189, 95%, 43%);
+  border-radius: 6px;
+  background: linear-gradient(#0fbef3, #16c4e3) #16a2e3;
+  transition: 0.2s;
+}
+#sumbit:hover {
+  background: linear-gradient(#00bcf5, #009bf5) #00a7f5;
+}
+#sumbit:active {
+  background: linear-gradient(#00d8f5, #009bf5) #00c4f5;
+}
+
+input[type="number"],
+input[type="text"] {
+  font-size: 18px;
+  outline: none;
+  border-style: solid;
+  border-color: hsl(199, 98%, 60%) hsl(189, 95%, 43%);
+  border-radius: 6px;
+}
+
+table.ram-form {
+  margin-left: 5%;
+  width: 90%;
+  font-size: 18px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: hsl(199, 98%, 60%);
+  letter-spacing: 0.1em;
+}
+
+.logo-login {
+    height: 110px;
+    width: 110px;
+    margin-top: 4.5%;
+    margin-left: -17%;
+    border-radius: 100px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.app {
+  margin-top: 12%;
+}
+
+.app.up {
+  margin-top: 1%;
+}
+
+#textarea {
+  margin-left: 13%;
+  overflow: hidden;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14pt;
+  resize: none;
+  width: 70%;
+  height: 49px;
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 7px;
+  outline: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: hsl(199, 98%, 60%) hsl(189, 95%, 43%);
+  border-radius: 6px;
+  background: white;
+  transition: 0.2s;
+}
+
+.tweet-content {
+  display: flex;
+  padding: 10px;
+}
+
+.status {
+  width: 600px;
+  margin: 10px auto;
+  font-family: "Noto Sans JP", sans-serif;
+  border-radius: 10px;
+  border: 5px solid rgba(0, 174, 255, 0.171);
+  background-color: white;
+}
+
+.logo {
+  margin-bottom: -2%;
+  height: 75px;
+  width: 75px;
+  border-radius: 50px;
+  padding: 5px;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.workout-index {
+  position: relative;
+  width: 590px;
+  text-align: center;
+  background-color: #f5f8fa;
+  padding: 10px;
+  border: 2px solid #f1f2f3cb;
+  border-radius: 10px;
+  margin-left: -15.5%;
+}
+
+.tweet-index {
+  font-size: 18px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: hsl(199, 98%, 60%);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1160px){
+  .navbar a {
+    float: none;
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Noto Sans JP", sans-serif;
+    padding: 14px;
+  }
+  .ram{
+    margin-left:19.5%;
+  }
+}
+
+@media screen and (max-width: 1105px) {
+  .navbar a {
+    float: none;
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Noto Sans JP", sans-serif;
+    padding: 10px;
+  }
+  .description {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 55%;
+    margin-left: 8%;
+  }
+  .ram{
+    margin-left:19.5%;
+  }
+  .logo-login {
+    height: 90px;
+    border-radius: 50%;
+    margin-left: -19.7%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+.count, .total{
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    display: flex;
+}
+
+.tweet-login{
+    color: grey;
+}

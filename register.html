@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <title>Регистрация</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="js/register.js" defer ></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/register.css" type="text/css" />
+  </head>
+  <body>
+    <div class="dws-wrapper">
+      <div class="dws-form">
+        <label class="tab" id="tab-2">Регистрация</label>
+
+        <form action="." method="post"  class="tab-form">
+          <div class="box-input">
+            <input class="input" type="text" required />
+            <label>Введите E-mail</label>
+          </div>
+          <div class="box-input">
+            <input class="input" type="text" required />
+            <label>Введите свое имя</label>
+          </div>
+          <div class="box-input">
+            <input class="input" type="password" required />
+            <label>Введите пароль</label>
+          </div>
+          <div class="box-input">
+            <input class="input" type="password" required />
+            <label>Повторите пароль</label>
+          </div>
+          <input type="submit" class="button" value="Регистрация"/>
+          <div class="recover">
+            <input type="checkbox" id="ckbox" />
+            <label for="ckbox"
+              >Ознакомлен(-а) и принимаю
+              <a href="#" class = "condition">условия регистрации</a></label>
+          </div>
+          <P></P>
+          <a href="login.html" class = "not-entry">Уже зарегистрированы?</a>
+        </form>
+      </div>
+      <div class ="condition-form">
+      <div class = "white-form">
+      <a href='#' class="close"></a>
+        <h1>Условия <br>регистрации </h1>
+        <p>Нужно нажать зарегистрироваться и отметить галочку.<br> Условий больше нет.</p>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

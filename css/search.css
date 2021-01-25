@@ -1,0 +1,300 @@
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+body {
+  background: url('/img/mypage.jpg') no-repeat;
+  background-size: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar ul {
+  display: none;
+
+  position: absolute;
+  top: 185%;
+  border-radius: 6px;
+}
+
+.navbar ul li a:hover {
+  border: 3px solid rgba(64, 194, 245, 0.795);
+  color: rgba(0, 183, 255, 0.795);
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar ul li a{
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 6px;
+  background-color:  rgb(64, 194, 245);
+  border: 3px solid rgba(255, 255, 255, 0.459);
+  font-size: 16px;
+}
+
+.navbar li:hover ul { display: block;  }
+.navbar, .navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar a {
+  float: left;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  padding: 16px;
+  display: block;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Ссылки навбар при наведении мыши */
+.navbar a:hover {
+  background-color: rgba(233, 233, 233, 0.37);
+  border-width: 5px 0;
+  border-radius: 6px;
+}
+
+.navbar {
+  height: 30px;
+  padding-left: 25px;
+  min-width: 470px;
+  width: 65%;
+  margin-top: 0.65%;
+  background-color: rgba(85, 85, 85, 0);
+  float: right;
+  margin-right: 9%;
+}
+.navbar li {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+.navbar ul li { float: none; }
+
+.navbar ul li:hover { background-color: #666;  }
+
+/* Текущая / активная навигационная ссылка */
+.active {
+  background-color: #73cffa;
+  border-width: 5px 0;
+  border-radius: 6px;
+}
+
+.name {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 4.5%;
+  margin-left: -10%;
+  text-align: left;
+  overflow: hidden;
+}
+
+span {
+  color: grey;
+}
+
+.login {
+    font-weight: lighter;
+    color: rgba(131, 125, 125, 0.699);
+  }
+
+  .nameing {
+    width: 25%;
+    float: left;
+  }
+
+  .logo-login {
+    height: 125px;
+    width: 125px;
+    margin-top: 4.5%;
+    margin-left: -20%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .app {
+    margin-top: 3%;
+    float: left;
+
+  }
+
+
+  .tweet-content {
+    display: flex;
+    padding: 10px;
+  }
+
+  .status {
+    width: 600px;
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 5px solid rgba(0, 174, 255, 0.171);
+    background-color: white;
+  }
+
+  .logo {
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    padding: 5px;
+    margin-left: 3%;
+  }
+
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+
+* {box-sizing: border-box;}
+form {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  color: white;
+  float: left; /* Обтекание справа */
+  width: 25%;
+  margin-top: 4%;
+  margin-left: 8%;
+}
+input, .submit {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+input {
+  width: 100%;
+  height: 42px;
+  background: #fffefee0;
+  padding-left: 15px;
+}
+.submit {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  margin-right: 42%;
+  margin-top: 0.6%;
+  right: 8px;
+  background: #62c9e2;
+  cursor: pointer;
+}
+.submit:before {
+  content: "\f105";
+  font-family: FontAwesome;
+  color: #f1f1f1;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subscribe{
+  font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 36%;
+    color:white;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 4px 8px;
+    height: 20%;
+    outline: none;
+    border-width: 2px;
+    border-style: solid none;
+    border-color: hsl(199, 98%, 60%) #000 hsl(189, 95%, 43%);
+    border-radius: 6px;
+    background: linear-gradient(#0fbef3, #16c4e3) #16a2e3;
+    transition: 0.2s;
+    letter-spacing:0.5px;
+  }
+  .subscribe:hover { background: linear-gradient(#00bcf5, #009bf5) #00a7f5; }
+  .subscribe:active { background: linear-gradient(#00d8f5, #009bf5) #00c4f5; }
+
+
+@media screen and (max-width: 1160px){
+  .navbar a {
+    float: none;
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Noto Sans JP", sans-serif;
+    padding: 14px;
+  }
+  .app {
+    margin-top: 0%;
+    float: left;
+    margin-left:26%;
+  }
+}
+
+@media screen and (max-width: 1122px) {
+  .app {
+    margin-top: 2%;
+    float: left;
+    margin-left:23%;
+  }
+  .navbar a {
+    float: none;
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Noto Sans JP", sans-serif;
+    padding: 10px;
+  }
+
+  .logo-login {
+    height: 90px;
+    border-radius: 50%;
+    margin-left: -19.7%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .app {
+    margin-top: 2%;
+    float: left;
+    margin-left:20%;
+  }
+  .navbar a {
+    float: none;
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: "Noto Sans JP", sans-serif;
+    padding: 8px;
+  }
+
+  .logo-login {
+    height: 90px;
+    border-radius: 50%;
+    margin-left: -19.7%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .app {
+    margin-top: 2%;
+    float: left;
+    margin-left:17%;
+  }
+  .navbar a {
+    float: none;
+    display: block;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: "Noto Sans JP", sans-serif;
+    padding: 6px;
+  }
+
+  .logo-login {
+    height: 80px;
+    border-radius: 50%;
+    margin-left: -19.7%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+  }
+}

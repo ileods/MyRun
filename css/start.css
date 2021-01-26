@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 body{
-  /* background: url(start.jpg) no-repeat; */
   background-size: 100%;
   background-color: #50b3d0;
 }

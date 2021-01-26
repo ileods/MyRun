@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url('/img/entry.jpg') no-repeat;
+  background: url('../img/entry.jpg') no-repeat;
   background-color: #50b3d0;
   background-size: 100%;
   font-family: 'Roboto', sans-serif;
